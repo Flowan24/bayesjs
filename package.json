@@ -2,11 +2,12 @@
   "name": "bayesjs",
   "version": "0.4.0-beta.4",
   "description": "Inference on Bayesian Networks",
-  "main": "dist/bayes.js",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
+    "tsc": "tsc",
     "build": "webpack --mode production",
     "watch": "webpack -w",
     "lint": "eslint \"**/*.ts\"",
@@ -53,5 +54,6 @@
     "typescript": "^3.5.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
-  }
+  },
+  "typings": "./dist/index.d.ts"
 }
