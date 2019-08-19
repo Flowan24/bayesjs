@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "tsc": "tsc",
-    "build": "webpack --mode production",
+    "build": "tsc",
     "watch": "webpack -w",
     "lint": "eslint \"**/*.ts\"",
     "test": "jest --config ./jest.config.js",
