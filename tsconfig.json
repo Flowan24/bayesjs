@@ -1,21 +1,18 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "noImplicitAny": false,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "sourceMap": false,
-    "declaration": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true,
     "outDir": "dist",
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": false,
     "target": "es2018",
     "lib": [ "es2018",  "esnext.asynciterable"],
-    "types": ["node"]
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strict": true,
+    "noImplicitAny": true
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
-  ]
+  "include": ["src/**/*.ts", "test/**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts", "dist"]
 }
