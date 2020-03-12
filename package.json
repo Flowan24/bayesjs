@@ -2,7 +2,7 @@
   "name": "bayesjs",
   "version": "0.4.1",
   "description": "Inference on Bayesian Networks",
-  "main": "dist/bayes.js",
+  "main": "dist/src/index.js",
   "files": [
     "dist"
   ],
@@ -11,8 +11,9 @@
     "npm": ">= 6"
   },
   "scripts": {
-    "build": "webpack --mode production",
-    "watch": "webpack -w",
+    "tsc": "tsc",
+    "build": "tsc",
+    "watch": "tsc -w",
     "lint": "eslint \"**/*.ts\"",
     "test": "jest --config ./jest.config.js",
     "test:watch": "jest --watch --config ./jest.config.js",
@@ -74,8 +75,6 @@
     "lodash": "^4.17.11",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.2.0",
-    "typescript": "^3.5.1",
-    "webpack": "^4.32.2",
-    "webpack-cli": "^3.3.2"
+    "typescript": "^3.5.1"
   }
-}
+ }
